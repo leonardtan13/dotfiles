@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd" }
+local servers = { "html", "cssls", "tsserver", "clangd", "thriftls" }
 
 local util = require "lspconfig/util"
 
@@ -23,6 +23,14 @@ lspconfig.gopls.setup {
       },
     },
   },
+}
+
+lspconfig.thriftls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"thriftls"},
+    filetypes = {"thrift"},
+    root_dir = util.root_pattern(".thrift"),
 }
 
 for _, lsp in ipairs(servers) do

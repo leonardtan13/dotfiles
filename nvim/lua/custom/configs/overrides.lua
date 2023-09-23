@@ -12,6 +12,7 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "thrift",
   },
   indent = {
     enable = true,
@@ -39,6 +40,7 @@ M.mason = {
     "clang-format",
 
     "gopls",
+    "thriftls",
   },
 }
 
