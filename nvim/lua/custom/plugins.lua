@@ -81,6 +81,13 @@ local plugins = {
   {
     "rcarriga/nvim-dap-ui",
   },
+  {
+    "NMAC427/guess-indent.nvim",
+    config = function()
+      require("guess-indent").setup {}
+    end,
+    event = "BufEnter",
+  },
 
   -- To make a plugin not be loaded
   -- {
