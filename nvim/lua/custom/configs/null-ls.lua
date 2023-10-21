@@ -21,6 +21,9 @@ local sources = {
   b.formatting.gofumpt,
   b.formatting.goimports,
   b.formatting.golines,
+
+  -- svelte
+  b.formatting.prettier.with { filetypes = { "svelte" } },
 }
 
 null_ls.setup {

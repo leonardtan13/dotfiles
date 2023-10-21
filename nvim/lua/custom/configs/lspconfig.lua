@@ -26,11 +26,16 @@ lspconfig.gopls.setup {
 }
 
 lspconfig.thriftls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    cmd = {"thriftls"},
-    filetypes = {"thrift"},
-    root_dir = util.root_pattern(".thrift"),
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "thriftls" },
+  filetypes = { "thrift" },
+  root_dir = util.root_pattern ".thrift",
+}
+
+lspconfig.svelte.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 for _, lsp in ipairs(servers) do

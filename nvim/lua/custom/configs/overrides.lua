@@ -13,6 +13,10 @@ M.treesitter = {
     "markdown",
     "markdown_inline",
     "thrift",
+    "go",
+    "svelte",
+    "json",
+    "thrift",
   },
   indent = {
     enable = true,
@@ -34,6 +38,7 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "svelte",
 
     -- c/cpp stuff
     "clangd",
