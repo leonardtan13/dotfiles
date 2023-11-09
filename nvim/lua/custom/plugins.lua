@@ -88,6 +88,14 @@ local plugins = {
     end,
     event = "BufEnter",
   },
+  {
+    "ThePrimeagen/harpoon",
+    event = "BufEnter",
+    config = function()
+      require("harpoon").setup {}
+      require('telescope').load_extension('harpoon')
+    end,
+  },
 
   -- To make a plugin not be loaded
   -- {
