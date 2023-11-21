@@ -93,7 +93,17 @@ local plugins = {
     event = "BufEnter",
     config = function()
       require("harpoon").setup {}
-      require('telescope').load_extension('harpoon')
+      require("telescope").load_extension "harpoon"
+    end,
+  },
+  {
+    "ggandor/leap.nvim",
+    event = "BufEnter",
+    dependencies = {
+      "tpope/vim-repeat",
+    },
+    config = function()
+      require("leap").add_default_mappings()
     end,
   },
 
