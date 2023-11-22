@@ -46,6 +46,7 @@ M.mason = {
 
     "gopls",
     "thriftls",
+    "rust_analyzer"
   },
 }
 
