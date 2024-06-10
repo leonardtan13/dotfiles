@@ -38,7 +38,6 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
-    "svelte",
 
     -- c/cpp stuff
     "clangd",
@@ -46,7 +45,9 @@ M.mason = {
 
     "gopls",
     "thriftls",
-    "rust_analyzer"
+
+    "goimports-reviser",
+    "golangci-lint"
   },
 }
 

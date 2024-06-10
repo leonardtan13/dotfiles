@@ -18,9 +18,11 @@ local sources = {
   b.formatting.clang_format,
 
   -- golang
-  b.formatting.gofumpt,
+  -- b.formatting.gofumpt,
   b.formatting.goimports,
-  b.formatting.golines,
+  -- b.formatting.golines,
+  -- b.formatting.goimports_reviser,
+  -- b.diagnostics.golangci_lint,
 
   -- svelte
   b.formatting.prettier.with { filetypes = { "svelte" } },
