@@ -106,6 +106,13 @@ local plugins = {
       require("leap").add_default_mappings()
     end,
   },
+  {
+    "tris203/precognition.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("precognition").setup {}
+    end,
+  },
 
   -- To make a plugin not be loaded
   -- {
