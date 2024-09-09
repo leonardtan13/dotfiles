@@ -23,7 +23,7 @@ local sources = {
   b.formatting.golines,
 
   -- svelte
-  b.formatting.prettier.with { filetypes = { "svelte" } },
+  -- b.formatting.prettier.with { filetypes = { "svelte" } },
 }
 
 null_ls.setup {

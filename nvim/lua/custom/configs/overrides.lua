@@ -38,7 +38,7 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
-    "svelte",
+    -- "svelte",
 
     -- c/cpp stuff
     "clangd",
@@ -46,7 +46,7 @@ M.mason = {
 
     "gopls",
     "thriftls",
-    "rust_analyzer"
+    "rust_analyzer",
   },
 }
 
