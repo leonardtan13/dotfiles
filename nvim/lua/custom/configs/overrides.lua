@@ -17,6 +17,7 @@ M.treesitter = {
     "svelte",
     "json",
     "thrift",
+    "python",
   },
   indent = {
     enable = true,
@@ -38,6 +39,8 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "prettierd",
+    "eslint_d",
     -- "svelte",
 
     -- c/cpp stuff
@@ -47,6 +50,8 @@ M.mason = {
     "gopls",
     "thriftls",
     "rust_analyzer",
+    "pyright",
+    "ruff",
   },
 }
 

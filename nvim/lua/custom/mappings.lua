@@ -5,9 +5,6 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
-    -- bytedance specific keybind for prefix logger
-    ["<leader>pl"] = { "ipl := prefix_logger.NewAutoPrefix()", "prefix logger snippet" },
-
     -- harpoon mappings
     ["<leader>hx"] = {
       function()

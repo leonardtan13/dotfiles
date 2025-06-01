@@ -9,6 +9,9 @@ local b = null_ls.builtins
 local sources = {
   -- webdev stuff
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
+  -- b.formatting.eslint_d,
+  b.code_actions.eslint_d,
+  -- b.formatting.prettierd,
   b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
 
   -- Lua
@@ -21,6 +24,15 @@ local sources = {
   b.formatting.gofumpt,
   b.formatting.goimports,
   b.formatting.golines,
+
+  b.formatting.ruff.with {
+    command = "ruff",
+    args = { "format", "-n", "--stdin-filename", "$FILENAME", "-" },
+  },
+  b.diagnostics.ruff.with {
+    command = "ruff",
+    args = { "check", "-e", "-n", "--stdin-filename", "$FILENAME", "-" },
+  },
 
   -- svelte
   -- b.formatting.prettier.with { filetypes = { "svelte" } },
